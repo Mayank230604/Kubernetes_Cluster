@@ -1,34 +1,36 @@
-# Creating a cluster using KinD
+#Creating a cluster using KinD
 Note:Docker should be installed
-1. Use the curl command to download Kind.
 
-'curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-linux-amd64'
+#Install Kind on Linux -
+1.Use the curl command to download Kind:
 
-2. Change the binary's permissions to make it executable.
+  ##curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.14.0/kind-linux-amd64
 
-'chmod +x ./kind'
+2.Change the binary's permissions to make it executable:
 
-3. Move kind to an application directory, such as /bin:
+  ##chmod +x ./kind
 
-'sudo mv ./kind /bin/kind'
+3.Move kind to an application directory, such as /bin:
 
-# Using Kind to Create a Development Environment
-1. To create a cluster with a different name, use the --name option.
+  ##sudo mv ./kind /bin/kind
 
-'kind create cluster --name=[cluster-name]'
+#Using Kind to Create a Development Environment
+1.To create a cluster with a different name, use the --name option:
 
-2. Confirm the cluster deployment with kubectl:
+  ##kind create cluster --name=[cluster-name]
 
-'kubectl get nodes'
+2.Confirm the cluster deployment with kubectl:
+
+  ##kubectl get nodes
 
 Note:if returns, ""kubect1"command not found" then install kubect1 using snap
 
-  'snap install kubectl --classic'
+  ##snap install kubectl --classic
   
-3. Check the Created Cluster with get
+3.Check the Created Cluster with get:
 
-'kind get clusters'
+  ##kind get clusters
 
-4. To Delete the Cluster
+4.To Delete the Cluster:
 
-    'kind delete cluster'
+   ##kind delete cluster
