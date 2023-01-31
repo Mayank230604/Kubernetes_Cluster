@@ -1,4 +1,4 @@
-#Creating a cluster using KinD
+# Creating a cluster using KinD
 Note:Docker should be installed
 
 #Install Kind on Linux -
