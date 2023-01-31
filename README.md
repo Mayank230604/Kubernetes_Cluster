@@ -14,7 +14,7 @@ Note: Docker should be installed
    
     sudo mv ./kind /bin/kind
     
-### Using Kind to Create a Development Environment
+### Using Kind to Create a Development Environment -
   1. To create a cluster with a different name, use the --name option.
   
          kind create cluster --name=[cluster-name]
